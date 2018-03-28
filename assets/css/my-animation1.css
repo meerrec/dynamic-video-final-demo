@@ -1,23 +1,23 @@
 @-webkit-keyframes textAnimate1 {
     from{
-        -webkit-transform: translateY(250px);  }
+        -webkit-transform: translateY(50vh);  }
     8%,30%{
         -webkit-transform: translateY(0);}
     35%,95%{
-        -webkit-transform: translateY(-145px);  }
+        -webkit-transform: translateY(-20vh);  }
     to {
-        -webkit-transform: translateY(-800px);  }
+        -webkit-transform: translateY(-100vh);  }
 }
 
 @keyframes textAnimate1 {
     from {
-        transform: translateY(250px); }
+        transform: translateY(50vh); }
     8%,25% {
         transform: translateY(0);}
     30%,95% {
-        transform: translateY(-145px); }
+        transform: translateY(-20vh); }
     to {
-        transform: translateY(-800px); }
+        transform: translateY(-100vh); }
 }
 .textAnimate1 {
     -webkit-animation-name: textAnimate1;
