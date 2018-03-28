@@ -1,19 +1,19 @@
 @-webkit-keyframes textAnimate6__calendar {
-    from{
+     from{
 
-        -webkit-transform: translateY(100px) scale(0);  }
-    10%,90%{
-        -webkit-transform: translateY(100px) scale(1);}
-    to {
-        -webkit-transform: translateY(-800px) scale(1);  }
-}
+         -webkit-transform: translateY(100px) scale(0);  }
+     10%,90%{
+         -webkit-transform: translateY(60%) scale(1);}
+     to {
+         -webkit-transform: translateY(-800px) scale(1);  }
+ }
 
 @keyframes textAnimate6__calendar {
     from {
         transform: translateY(100px) scale(0);
     }
     10%,90%{
-        transform: translateY(100px) scale(1);}
+        transform: translateY(60%) scale(1);}
     to {
         transform: translateY(-800px) scale(1); }
 }
@@ -29,7 +29,7 @@
 
         -webkit-transform: translateY(0)  }
     10%,90%{
-        -webkit-transform: translateY(15px) }
+        -webkit-transform: translateY(40%) }
     to {
         -webkit-transform: translateY(-800px)  }
 }
@@ -39,7 +39,7 @@
         transform: translateY(0) ;
     }
     10%,80%{
-        transform: translateY(15px)
+        transform: translateY(40%)
     }
     to {
         transform: translateY(-800px) ;
