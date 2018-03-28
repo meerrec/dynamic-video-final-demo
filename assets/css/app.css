@@ -67,14 +67,15 @@ h1 {
     position: relative;
     overflow: hidden;
     display: inline-block;
+    width: 100%;
+    max-width: 854px;
 }
 
 .b-text-animation {
     position: absolute;
     width: 100%;
-    /* max-height: 90%; */
+    height: 100%;
     top: 0;
-    transform: translate(0, -50%);
     left: 0;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -91,6 +92,10 @@ h1 {
 
 .b-text-animation.is-ready {
     z-index: 99;
+}
+
+.vjs-control-bar {
+    z-index: 100;
 }
 
 @-webkit-keyframes show {
@@ -166,10 +171,16 @@ h1 {
 
 #textAnimate1{
     position: absolute;
-    top: 230px;
+    top: 47.9167%;
     font-size: 70px;
     font-family: "Segoe UI";
     font-weight: 900;
+    display: inline-block;
+}
+@media(max-width: 854px){
+    #textAnimate1 {
+        font-size: 8.1967vw;
+    }
 }
 .textAnimate2{
     display: flex;
@@ -189,7 +200,7 @@ h1 {
     height: 50px;
     width: 200px;
     position: absolute;
-    right: 280px;
+    left: 480px;
     top: 70px;
     font-size: 54px;
     font-family: "Segoe UI";

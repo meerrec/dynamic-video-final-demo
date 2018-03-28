@@ -4,7 +4,7 @@ window.HELP_IMPROVE_VIDEOJS = false;
 function VideoPlayer() {
     var videoElem = document.createElement('VIDEO');
     videoElem.setAttribute('src', './assets/video/HDFC-original-Edited.mp4');
-    videoElem.setAttribute('class', 'video-js');
+    videoElem.setAttribute('class', 'video-js vjs-fluid');
     videoElem.setAttribute('controls', true);
     videoElem.setAttribute('id', 'js--video-player');
     this.video = videoElem;
