@@ -88,6 +88,8 @@ h1 {
     justify-content: center;
     color: white;
     z-index: 0;
+    transform: skewX(5deg);
+    transform-origin: 50%;
 }
 
 .b-text-animation.is-ready {
@@ -157,9 +159,9 @@ h1 {
 .charlie {
     opacity: 0;
 }
-
 .charlie.animated {
     opacity: 1;
+    
 }
 
 #textAnimate1{
