@@ -1,0 +1,48 @@
+@-webkit-keyframes textAnimate2 {
+    from{
+        -webkit-transform: translateY(0);  }
+    75%{
+        -webkit-transform: translateY(0);}
+    to {
+        -webkit-transform: translateY(-800px);  }
+}
+
+@keyframes textAnimate2 {
+    from {
+        transform: translateY(0); }
+    75%{
+        transform: translateY(0);}
+    to {
+        transform: translateY(-800px); }
+}
+.textAnimate2 {
+    -webkit-animation-name: textAnimate2;
+    animation-name: textAnimate2;
+    -webkit-animation-duration: 5.2s;
+    animation-duration: 5.2s;
+}
+
+
+@-webkit-keyframes textAnimateLetter {
+    from{
+        -webkit-transform: translateY(50px);  }
+    10%{
+        -webkit-transform: translateY(0);}
+    to {
+        -webkit-transform: translateY(0);  }
+}
+
+@keyframes textAnimateLetter {
+    from {
+        transform: translateY(50px); }
+    10%{
+        transform: translateY(0);}
+    to {
+        transform: translateY(0); }
+}
+.textAnimateLetter {
+    -webkit-animation-name: textAnimateLetter;
+    animation-name: textAnimateLetter;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+}

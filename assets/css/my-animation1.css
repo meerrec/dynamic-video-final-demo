@@ -1,0 +1,27 @@
+@-webkit-keyframes textAnimate1 {
+    from{
+        -webkit-transform: translateY(250px);  }
+    8%,30%{
+        -webkit-transform: translateY(0);}
+    35%,95%{
+        -webkit-transform: translateY(-145px);  }
+    to {
+        -webkit-transform: translateY(-800px);  }
+}
+
+@keyframes textAnimate1 {
+    from {
+        transform: translateY(250px); }
+    8%,25% {
+        transform: translateY(0);}
+    30%,95% {
+        transform: translateY(-145px); }
+    to {
+        transform: translateY(-800px); }
+}
+.textAnimate1 {
+    -webkit-animation-name: textAnimate1;
+    animation-name: textAnimate1;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+}

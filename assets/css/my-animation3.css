@@ -1,0 +1,41 @@
+@-webkit-keyframes amountAnimate {
+    from {
+        -webkit-transform: translateX(-100px);
+    }
+    3%{
+        -webkit-transform: translateX(-50px);
+    }
+    6%,20% {
+        -webkit-transform: translate(0,0);
+    }
+    55%,87% {
+        -webkit-transform: translate(0,0);
+    }
+    91% {
+        -webkit-transform: translate(0,-15px);
+    }
+    93%,to {
+        -webkit-transform: translate(0, -500px);
+    } }
+
+@keyframes amountAnimate {
+    from{
+        transform: translateX(-100px); }
+    3%{
+        transform: translateX(-50px);
+    }
+    6%,20% {
+        transform: translate(0,0); }
+    55%,87% {
+        transform: translate(0,0); }
+    91% {
+        transform: translate(0,-15px); }
+    93%,to {
+        transform: translate(0, -500px); }
+}
+.amountAnimate{
+    -webkit-animation: amountAnimate;
+    animation: amountAnimate;
+    -webkit-animation-duration: 11s;
+    animation-duration: 11s;
+}

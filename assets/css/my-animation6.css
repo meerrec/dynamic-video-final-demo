@@ -1,0 +1,78 @@
+@-webkit-keyframes textAnimate6__calendar {
+    from{
+
+        -webkit-transform: translateY(100px) scale(0);  }
+    10%,90%{
+        -webkit-transform: translateY(100px) scale(1);}
+    to {
+        -webkit-transform: translateY(-800px) scale(1);  }
+}
+
+@keyframes textAnimate6__calendar {
+    from {
+        transform: translateY(100px) scale(0);
+    }
+    10%,90%{
+        transform: translateY(100px) scale(1);}
+    to {
+        transform: translateY(-800px) scale(1); }
+}
+.textAnimate6__calendar {
+    -webkit-animation-name: textAnimate6__calendar;
+    animation-name: textAnimate6__calendar;
+    -webkit-animation-duration: 3.5s;
+    animation-duration: 3.5s;
+}
+
+@-webkit-keyframes textAnimate6__amount {
+    from{
+
+        -webkit-transform: translateY(0)  }
+    10%,90%{
+        -webkit-transform: translateY(15px) }
+    to {
+        -webkit-transform: translateY(-800px)  }
+}
+
+@keyframes textAnimate6__amount {
+    from {
+        transform: translateY(0) ;
+    }
+    10%,80%{
+        transform: translateY(15px)
+    }
+    to {
+        transform: translateY(-800px) ;
+    }
+}
+.textAnimate6__amount {
+    -webkit-animation-name: textAnimate6__amount;
+    animation-name: textAnimate6__amount;
+    -webkit-animation-duration: 7.5s;
+    animation-duration: 7.5s;
+}
+
+
+
+@-webkit-keyframes textAnimate6Letter {
+    from,90%{
+
+        -webkit-transform: translateY(0)  }
+    to {
+        -webkit-transform: translateY(-800px)  }
+}
+
+@keyframes textAnimate6Letter {
+    from ,90%{
+        transform: translateY(0) ;
+    }
+    to {
+        transform: translateY(-800px) ;
+    }
+}
+.textAnimate6Letter {
+    -webkit-animation-name: textAnimate6Letter;
+    animation-name: textAnimate6Letter;
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+}
