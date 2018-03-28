@@ -1865,8 +1865,10 @@ if (typeof document !== "undefined" && !("classList" in document.createElement("
 
         start: function() {
             var me = this;
+            this.animated = 'animated';
             //The name of the animation is the same as the class name by convention.
             me.element.classList.add(me.name);
+            me.element.classList.add(me.animated);
             onAnimationEnd(me.element, function() {
                 me.reset();
             });
@@ -1874,7 +1876,7 @@ if (typeof document !== "undefined" && !("classList" in document.createElement("
 
         reset: function() {
             this.element.classList.remove(this.name);
-
+            this.element.classList.remove(this.animated);
             // cause a reflow, otherwise the animation isn't fully 
             // removed. (let's call this a browser bug).
             this.element.offsetWidth = this.element.offsetWidth;
