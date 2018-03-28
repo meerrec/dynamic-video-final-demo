@@ -195,6 +195,14 @@ function videoAmount5 (){
 
 }
 
+function divideWordIntoLetters(){
+  var word = "MARCH2018";
+  var str = word.split('');
+  $.each(str, function(index) { // идем по массиву
+    $("#textAnimate2").append('<span class="charlie" data-animations="textAnimateLetter" data-times="3.' + (index) + '">' + this + '</span>' );
+  });
+}
+
 
 
 $(document).ready(function () {
@@ -203,7 +211,7 @@ $(document).ready(function () {
         var videoParent = video.parentElement;
         videoParent.insertBefore(textAnimationBlock,video);
     });
-
+    divideWordIntoLetters();
     CHARLIE.setup(video);
   textAnimationBlock.classList.add('is-ready')
 
