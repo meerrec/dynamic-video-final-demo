@@ -96,6 +96,10 @@ h1 {
     z-index: 99;
 }
 
+.vjs-big-play-button {
+    z-index: 99;
+}
+
 .vjs-control-bar {
     z-index: 100;
 }

@@ -86,8 +86,8 @@ VideoPlayer.prototype.init = function () {
   videoPlayerWrapper.append (video);
   self.myPlayer = videojs ('js--video-player', {
     controls: true,
-    autoplay: true,
-    preload: 'auto',
+    autoplay: false,
+    preload: true,
   });
 };
 var vPlayer = new VideoPlayer (),
