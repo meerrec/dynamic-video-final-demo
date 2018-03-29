@@ -1,28 +1,28 @@
 {
-	"id": "hdfc_01",
-	"name": "RAJENDAR",
-	"month": "MARCH 2017",
-	"total_charges": "48313",
-	"recent_pmt_amt": "5798",
-	"recent_pmt_date": {
-		"date": "2",
-		"month": "MARCH",
-		"year": "2017"
-	},
-	"overall_balance": "92018",
-	"min_payment": "2416",
-	"due_date": {
-		"date": "5",
-		"month": "APRIL",
-		"year": "2017"
-	},
-	"points_earned_month": "24156",
-	"total_points_earned": "483120",
-	"expense_distribution": {
-		"food": "7562",
-		"entertainment": "1740",
-		"automobile": "10594",
-		"healthcare": "9405",
-		"merchandise": "19012"
-	}
+    "id": "hdfc_01",
+    "name": "RAJENDAR",
+    "month": "MARCH 2017",
+    "total_charges": "48313",
+    "recent_pmt_amt": "5798",
+    "recent_pmt_date": {
+        "date": "2",
+        "month": "MARCH",
+        "year": "2017"
+    },
+    "overall_balance": "92018",
+    "min_payment": "2416",
+    "due_date": {
+        "date": "5",
+        "month": "MARCH",
+        "year": "2017"
+    },
+    "points_earned_month": "24156",
+    "total_points_earned": "483120",
+    "expense_distribution": {
+        "food": "7562",
+        "entertainment": "1740",
+        "automobile": "10594",
+        "healthcare": "9405",
+        "merchandise": "19012"
+    }
 }
