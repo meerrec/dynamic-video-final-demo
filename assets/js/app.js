@@ -7,8 +7,8 @@ function VideoPlayer() {
   // videoElem.setAttribute ('class', 'video-js vjs-fluid');
   videoElem.setAttribute('style', 'width: 100%;');
   videoElem.setAttribute('controls', true);
-  videoElem.setAttribute('autoplay', false);
-  videoElem.setAttribute('preload', 'auto');
+  videoElem.setAttribute('autoplay', true);
+  videoElem.setAttribute('preload', true);
   videoElem.setAttribute('id', 'js--video-player');
   videoElem.setAttribute('tabindex', -1)
   this.video = videoElem;
@@ -151,7 +151,7 @@ $(document).ready(function() {
     vPlayer.init();
 
     var videoParent = video.parentElement;
-    videoParent.insertBefore(textAnimationBlock, video);
+    videoParent.insertBefore(video, textAnimationBlock );
   });
   // divideWordIntoLetters ();
   textAnimationBlock.classList.add('is-ready');
