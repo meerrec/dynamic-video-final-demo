@@ -9,7 +9,7 @@
         -webkit-animation-timing-function: ease-in;
         -webkit-transform: translate(0,31.25%)}
     92.4%, to {
-        -webkit-transform: translate(0,-1500%) ;
+        -webkit-transform: translate(0,-1714%) ;
     }
 }
 
@@ -24,7 +24,7 @@
         animation-timing-function: ease-in;
         transform: translate(0,31.25%)}
     92.4%, to {
-        transform: translate(0,-1500%) ;
+        transform: translate(0,-1714%) ;
     }
 }
 .textAnimate7__block1__Letter {
@@ -48,7 +48,7 @@
         -webkit-animation-timing-function: ease-in;
         -webkit-transform: translate(0,14.705%)}
     92.13%, to {
-        -webkit-transform: translate(0,-705%)  }
+        -webkit-transform: translate(0,-872%)  }
 }
 
 @keyframes textAnimate7__block1__amount {
@@ -62,7 +62,7 @@
         animation-timing-function: ease-in;
         transform: translate(0,14.705%)}
     92.13%, to {
-        transform: translate(0,-705%)  }
+        transform: translate(0,-872%)  }
 }
 .textAnimate7__block1__amount {
     -webkit-animation-name: textAnimate7__block1__amount;
@@ -87,7 +87,7 @@
         -webkit-animation-timing-function: ease-in;
         -webkit-transform: translate(0,31.25%)}
     86.4%, to {
-        -webkit-transform: translate(0,-1500%) ;
+        -webkit-transform: translate(0,-1714%) ;
     }
 }
 
@@ -102,7 +102,7 @@
         animation-timing-function: ease-in;
         transform: translate(0,31.25%)}
     86.4%, to {
-        transform: translate(0,-1500%) ;
+        transform: translate(0,-1714%) ;
     }
 }
 .textAnimate7__block2__Letter {
@@ -125,7 +125,7 @@
         -webkit-animation-timing-function: ease-in;
         -webkit-transform: translate(0,14.705%)}
     86.12%, to {
-        -webkit-transform: translate(0,-705%)  }
+        -webkit-transform: translate(0,-872%)  }
 }
 
 @keyframes textAnimate7__block2__amount {
@@ -139,7 +139,7 @@
         animation-timing-function: ease-in;
         transform: translate(0,14.705%)}
     86.12%, to {
-        transform: translate(0,-705%)  }
+        transform: translate(0,-872%)  }
 }
 .textAnimate7__block2__amount {
     -webkit-animation-name: textAnimate7__block2__amount;
