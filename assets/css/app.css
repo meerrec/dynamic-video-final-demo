@@ -93,7 +93,7 @@ h1 {
 }
 
 .b-text-animation.is-ready {
-    z-index: 99;
+    /* z-index: 99; */
 }
 
 .video-js .vjs-big-play-button {
