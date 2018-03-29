@@ -71,6 +71,10 @@ h1 {
     max-width: 854px;
 }
 
+.b-video-player-wrapper video {
+    width: 100%;
+}
+
 .b-text-animation {
     position: absolute;
     width: 100%;

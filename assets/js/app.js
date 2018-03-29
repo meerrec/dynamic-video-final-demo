@@ -2,11 +2,14 @@
 window.HELP_IMPROVE_VIDEOJS = false;
 
 function VideoPlayer () {
-  var videoElem = document.createElement ('VIDEO');
-  videoElem.setAttribute ('src', './assets/video/HDFC-original-Edited.mp4');
+  var videoElem = document.createElement ('video');
   videoElem.setAttribute ('class', 'video-js vjs-fluid');
   videoElem.setAttribute ('controls', true);
   videoElem.setAttribute ('id', 'js--video-player');
+  var videoSourceElem = document.createElement ('source');
+  videoSourceElem.setAttribute ('src', './assets/video/HDFC-original-Edited.mp4');
+  videoElem.append(videoSourceElem);
+  
   this.video = videoElem;
 }
 
@@ -42,19 +45,36 @@ VideoPlayer.prototype.animationEnd = (function (el) {
 
 VideoPlayer.prototype.fetchData = function (uri, callback) {
   var self = this;
-  fetch (uri)
-    .then (function (response) {
-      return response.json ();
+  var jqxhr = $.get(uri, function() {
+    console.log( "success" );
+  })
+    .done(function(data) {
+      self.data = data;
     })
-    .then (function (myJson) {
-      self.data = myJson;
-      callback ();
-    });
+    .fail(function() {
+      alert( "error" );
+    })
+    .always(callback);
+  
+  // fetch (uri)
+  //   .then (function (response) {
+  //     return response.json ();
+  //   })
+  //   .then (function (myJson) {
+  //     self.data = myJson;
+  //     return callback ();
+  //   });
 };
 
 VideoPlayer.prototype.init = function () {
   var self = this;
-  var video = self.video;
+  var video = this.video;
+  self.myPlayer = videojs (video, {
+    controls: true,
+    autoplay: false,
+    preload: 'auto',
+  });
+  videoPlayerWrapper.append(self.myPlayer.el_);
   this.fetchData ('data.json', function callback () {
     $ ('.js-name').text (self.data.name);
     $ ('.js-recent_pmt_date .calendar__month').text (
@@ -70,9 +90,9 @@ VideoPlayer.prototype.init = function () {
     $ ('.js-due_date .calendar__data .num').text (self.data.due_date.date);
     $ ('.js-due_date .calendar__data .year').text (self.data.due_date.year);
     self.divideWordIntoLetters (self.data.month);
-    CHARLIE.setup (video);
-    return;
   });
+  
+    CHARLIE.setup (video);
 
   $ ('.charlie').on (self.animationStart, function (el) {
     if (this.id === 'amount') {
@@ -89,12 +109,8 @@ VideoPlayer.prototype.init = function () {
       self.numberAnimation (self.data.total_points_earned, 0, 50, this);
     }
   });
-  videoPlayerWrapper.append (video);
-  self.myPlayer = videojs ('js--video-player', {
-    controls: true,
-    autoplay: false,
-    preload: false,
-  });
+  
+  
 
   var currentTime = 0;
 
@@ -102,20 +118,8 @@ VideoPlayer.prototype.init = function () {
   //To disable all seeking replace the if statements from the next
   //two functions with myPlayer.currentTime(currentTime);
 
-  self.myPlayer.on ('seeking', function (event) {
-    if (currentTime < self.myPlayer.currentTime ()) {
-      self.myPlayer.currentTime (currentTime);
-    }
-  });
-
-  self.myPlayer.on ('seeked', function (event) {
-    if (currentTime < self.myPlayer.currentTime ()) {
-      self.myPlayer.currentTime (currentTime);
-    }
-  });
 };
 var vPlayer = new VideoPlayer (),
-  video = vPlayer.video,
   textAnimationBlock = document.getElementById ('textAnimationBlock');
 
 VideoPlayer.prototype.numberAnimation = function (
@@ -165,13 +169,14 @@ VideoPlayer.prototype.divideWordIntoLetters = function (month) {
   });
 };
 
+
 $ (document).ready (function () {
+  var video = vPlayer.video;
   video.addEventListener ('loadedmetadata', function () {
     vPlayer.init ();
 
-    var videoParent = video.parentElement;
+    var videoParent = vPlayer.myPlayer.el_;
     videoParent.insertBefore (textAnimationBlock, video);
   });
-  // divideWordIntoLetters ();
   textAnimationBlock.classList.add ('is-ready');
 });
