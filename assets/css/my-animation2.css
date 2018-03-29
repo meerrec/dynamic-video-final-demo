@@ -1,19 +1,25 @@
 @-webkit-keyframes textAnimate2 {
-    from{
-        -webkit-transform: translateY(0);  }
-    75%{
+    from {
+        -webkit-transform: translateY(0); }
+    71%{
         -webkit-transform: translateY(0);}
-    to {
-        -webkit-transform: translateY(-800px);  }
+    74%{
+        -webkit-animation-timing-function: ease-in;
+        -webkit-transform: translateY(12%);}
+    84.25%, to {
+        -webkit-transform: translateY(-600%); }
 }
 
 @keyframes textAnimate2 {
     from {
         transform: translateY(0); }
-    75%{
+    70%{
         transform: translateY(0);}
-    to {
-        transform: translateY(-800px); }
+    74.5%{
+        animation-timing-function: ease-in;
+        transform: translateY(12%) translateX(0); }
+    84.25%, to {
+        transform: translateY(-600%) translateX(7%); }
 }
 .textAnimate2 {
     -webkit-animation-name: textAnimate2;
@@ -25,7 +31,7 @@
 
 @-webkit-keyframes textAnimateLetter {
     from{
-        -webkit-transform: translateY(50px);  }
+        -webkit-transform: translateY(63.29%);  }
     10%{
         -webkit-transform: translateY(0);}
     to {
@@ -34,7 +40,7 @@
 
 @keyframes textAnimateLetter {
     from {
-        transform: translateY(50px); }
+        transform: translateY(63.29%); }
     10%{
         transform: translateY(0);}
     to {

@@ -1,54 +1,69 @@
 @-webkit-keyframes textAnimate4__calendar {
-    from{
-
-        -webkit-transform: translateY(100px) scale(0);  }
-    10%,50%{
-        -webkit-transform: translateY(100px) scale(1);}
-    60%,90%{
-        -webkit-transform: translateY(70%) scale(1);}
+    from {
+        -webkit-transform: translateY(20.83%) scale(0);
+    }
+    10%,40%{
+        -webkit-transform: translateY(20.83%) scale(1);}
+    50%,81.67%{
+        -webkit-transform: translateY(70%) scale(1);
+    }
+    87.5%{
+        -webkit-transform: translateY(80%) scale(1);
+    }
     to {
-        -webkit-transform: translateY(-800px) scale(1);  }
+        -webkit-transform: translateY(-250%) scale(1); }
 }
 
 @keyframes textAnimate4__calendar {
     from {
-        transform: translateY(100px) scale(0);
+        transform: translateY(20.83%) scale(0);
     }
     10%,40%{
-        transform: translateY(100px) scale(1);}
-    50%,80%{
+        transform: translateY(20.83%) scale(1);}
+    50%,81.67%{
         transform: translateY(70%) scale(1);
     }
+    87.5%{
+        transform: translateY(80%) scale(1);
+    }
     to {
-        transform: translateY(-800px) scale(1); }
+        transform: translateY(-250%) scale(1); }
 }
 .textAnimate4__calendar {
     -webkit-animation-name: textAnimate4__calendar;
     animation-name: textAnimate4__calendar;
-    -webkit-animation-duration: 6.5s;
-    animation-duration: 6.5s;
+    -webkit-animation-duration: 6s;
+    animation-duration: 6s;
 }
 
 
 @-webkit-keyframes textAnimate4__amount {
-    from{
-
-        -webkit-transform: translateY(0)  }
-    10%,90%{
-        -webkit-transform: translateY(40%) }
+    from {
+        -webkit-transform: translateY(0) ;
+    }
+    10%,68.57%{
+        -webkit-transform: translateY(40%)
+    }
+    78.57%{
+        -webkit-transform: translateY(68%) scale(1);
+    }
     to {
-        -webkit-transform: translateY(-800px)  }
+        -webkit-transform: translateY(-676%) ;
+    }
 }
 
 @keyframes textAnimate4__amount {
     from {
         transform: translateY(0) ;
     }
-    10%,80%{
+    10%,68.57%{
         transform: translateY(40%)
     }
+    78.57%{
+        transform: translateY(68%) scale(1);
+    }
     to {
-        transform: translateY(-800px) ;
+        transform: translateY(-676%) ;
     }
 }
 .textAnimate4__amount {
@@ -63,7 +78,7 @@
 
 @-webkit-keyframes textAnimate4Letter {
     from{
-        -webkit-transform: translateY(50px);  }
+        -webkit-transform: translateY(10.42%);  }
     10%{
         -webkit-transform: translateY(0);}
     to {
@@ -72,7 +87,7 @@
 
 @keyframes textAnimate4Letter {
     from {
-        transform: translateY(50px); }
+        transform: translateY(10.42%); }
     10%{
         transform: translateY(0);}
     to {
@@ -82,6 +97,33 @@
 .textAnimate4Letter {
     -webkit-animation-name: textAnimate4Letter;
     animation-name: textAnimate4Letter;
-    -webkit-animation-duration: 7s;
-    animation-duration: 7s;
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+}
+
+@-webkit-keyframes textAnimate4LetterOut {
+    from {
+        -webkit-transform: translateY(0); }
+    38.9%{
+        -webkit-transform: translateY(80%);
+    }
+    to {
+        -webkit-transform: translateY(-1920%); }
+}
+
+@keyframes textAnimate4LetterOut {
+    from {
+        transform: translateY(0); }
+    38.9%{
+        transform: translateY(80%);
+    }
+    to {
+        transform: translateY(-1920%); }
+}
+
+.textAnimate4LetterOut {
+    -webkit-animation-name: textAnimate4LetterOut;
+    animation-name: textAnimate4LetterOut;
+    -webkit-animation-duration: .9s;
+    animation-duration: .9s;
 }

@@ -99,6 +99,10 @@ h1 {
 .vjs-control-bar {
     z-index: 100;
 }
+.video-js.vjs-fullscreen {
+    height: 0 !important;
+    padding-top: 56.25% !important;
+}
 
 @-webkit-keyframes show {
     0% {
@@ -178,8 +182,8 @@ h1 {
     }
 }
 .vjs-fullscreen #textAnimate1{
-    font-size: 9vw;
-    top: 36%;
+    font-size: 8.1967vw;
+    top: 26.93vw;
 }
 .textAnimate2{
     display: flex;
@@ -187,30 +191,42 @@ h1 {
 #textAnimate2{
     position: absolute;
     display: flex;
-    top: 55%;
-    font-size: 80px;
+    top: 52.7%;
+    left: 18.2%;
+    font-size: 60px;
     font-family: "Segoe UI";
     font-weight: 900;
     color: #000048;
     overflow: hidden;
 }
+@media(max-width: 854px){
+    #textAnimate2{
+        font-size: 7.0257vw;
+    }
+}
 .vjs-fullscreen #textAnimate2{
-    top: 56%;
-    font-size: 7vw;
+    font-size: 7.0257vw;
 }
 
 #amount {
     height: 50px;
     position: absolute;
-    left: 50%;
-    top: 19%;
+    left: 55%;
+    top: 12%;
     font-size: 54px;
     font-family: "Segoe UI";
     font-weight: 900;
     color: #000048;
 }
+@media(max-width: 854px){
+    #amount {
+       font-size: 6.3vw;
+    }
+}
+
 .vjs-fullscreen #amount{
-    font-size: 7vw;
+    font-size: 6.3vw;
+    top: 6.79vw;
 }
 
 #chart{
@@ -238,8 +254,15 @@ h1 {
     font-weight: 900;
     color: #fff;
 }
+@media (max-width: 854px) {
+    #calendar {
+        border-radius: 1.17vw;
+        font-size: 3.75vw;
+    }
+}
 .vjs-fullscreen #calendar{
-    font-size: 4vh;
+    border-radius: 1.17vw;
+    font-size: 3.75vw;
 }
 .calendar__month{
     display: flex;
@@ -255,8 +278,13 @@ h1 {
     height: 100%;
     width: 100%;
     color: #079f00;
-    font-size: 70%;
+    font-size: 17px;
     font-weight: 400;
+}
+@media (max-width: 854px){
+    .calendar__data{
+        font-size: 2vw;
+    }
 }
 .vjs-fullscreen .calendar__data{
     font-size: 2vw;
@@ -276,18 +304,23 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    top:15%;
-    left: 50%;
+    top:14.4%;
+    left: 50.8%;
     width: 40%;
     height: 80%;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 500;
     margin-bottom: 10px;
 }
+@media(max-width: 854px){
+    #textAnimate4{
+        font-size: 3.04vw;
+    }
+}
 
 .vjs-fullscreen #textAnimate4{
-    font-weight: 800;
-    font-size: 2.5vw;
+    top: 8.08vw;
+    font-size: 3.04vw;
 }
 
 
@@ -298,8 +331,13 @@ h1 {
     font-weight: 900;
     color: #000048;
 }
+@media(max-width: 854px){
+    #textAnimate4amount{
+        font-size: 8.4vw;
+    }
+}
 .vjs-fullscreen #textAnimate4amount{
-    font-size: 6vw;
+    font-size: 8.4vw;
 }
 
 .textAnimate5{
@@ -318,14 +356,41 @@ h1 {
     color: #000048;
     overflow: hidden;
 }
-.vjs-fullscreen .textAnimate5{
-    font-size: 3vw;
+@media (max-width: 854px) {
+    .textAnimate5{
+        font-size: 3.74vw;
+    }
 }
+.vjs-fullscreen .textAnimate5{
+    font-size: 3.74vw;
+}
+.textAnimate5Letter{
+    overflow: hidden;
+    height: 31px;
+}
+@media (max-width: 854px) {
+    .textAnimate5Letter{
+        height: 3.63vw;
+    }
+}
+.vjs-fullscreen .textAnimate5Letter{
+    height: 3.63vw;
+}
+
 #textAnimate5amount{
     font-size: 72px;
+    overflow: hidden;
+    height: 71px;
+}
+@media (max-width: 854px) {
+    #textAnimate5amount{
+        font-size: 8.43vw;
+        height: 8.313vw;
+    }
 }
 .vjs-fullscreen #textAnimate5amount{
-    font-size: 7vw;
+    font-size: 8.43vw;
+    height: 8.313vw;
 }
 
 .textAnimate6{
@@ -340,8 +405,13 @@ h1 {
     font-size: 32px;
     color: #000048;
 }
+@media (max-width: 854px) {
+    .textAnimate6{
+        font-size: 3.75vw;
+    }
+}
 .vjs-fullscreen .textAnimate6{
-    font-size: 3vw;
+    font-size: 3.75vw;
 }
 .textAnimate6 .calendar__data{
     color: #960005;
@@ -354,13 +424,18 @@ h1 {
     font-size: 72px;
     font-weight: 900;
 }
+@media (max-width: 854px) {
+    #textAnimate6amount{
+        font-size: 8.43vw;
+    }
+}
 .vjs-fullscreen #textAnimate6amount{
-    font-size: 6vw;
+    font-size: 8.43vw;
 }
 
 #calendar2{
     position: absolute;
-    top:40px;
+    top:8.33%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -374,10 +449,14 @@ h1 {
     font-weight: 900;
     color: #fff;
 }
+@media (max-width: 854px) {
+    #calendar2{
+        font-size: 3.75vw;
+    }
+}
 
 .vjs-fullscreen #calendar2{
-    font-size: 4vw;
-    top:50px;
+    font-size: 3.75vw;
 }
 
 .textAnimate7{
@@ -392,8 +471,13 @@ h1 {
     font-size: 32px;
     color: #000048;
 }
+@media (max-width: 854px) {
+    .textAnimate7{
+       font-size: 3.75vw;
+    }
+}
 .vjs-fullscreen .textAnimate7{
-    font-size: 4vw;
+    font-size: 3.75vw;
 }
 .textAnimate7__block1{
     display: flex;
@@ -406,10 +490,15 @@ h1 {
     align-items: flex-end;
 }
 #textAnimate7__amount1, #textAnimate7__amount2{
-    font-size: 68px;
+    font-size: 56px;
     font-family: "Segoe UI";
     font-weight: 900;
 }
+@media (max-width: 854px) {
+    #textAnimate7__amount1, #textAnimate7__amount2{
+        font-size: 6.557vw;
+    }
+}
 .vjs-fullscreen #textAnimate7__amount1 ,.vjs-fullscreen #textAnimate7__amount2 {
-    font-size: 7vw;
+    font-size: 6.557vw;
 }

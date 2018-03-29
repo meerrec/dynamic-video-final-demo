@@ -1,23 +1,17 @@
 @-webkit-keyframes textAnimate5Letter {
     from{
-        -webkit-transform: translateY(50px);  }
-    10%,90%{
+        -webkit-transform: translateY(166%);  }
+    10%,to{
         opacity: 1;
         -webkit-transform: translateY(0);}
-    to {
-        opacity: 0;
-        -webkit-transform: translateY(20px);  }
 }
 
 @keyframes textAnimate5Letter {
     from {
-        transform: translateY(50px); }
-    10%,90%{
+        transform: translateY(166%); }
+    10%,to{
         transform: translateY(0);
         opacity: 1;}
-    to {
-        opacity: 0;
-        transform: translateY(20px); }
 }
 
 .textAnimate5Letter {
@@ -27,17 +21,44 @@
     animation-duration: 6s;
 }
 
+@-webkit-keyframes textAnimate5LetterOut {
+    from {
+        padding-top: 0%;
+    }
+    to {
+        padding-top: 10%;
+    }
+}
+
+@keyframes textAnimate5LetterOut {
+    from {
+        padding-top: 0%;
+    }
+    to {
+        padding-top: 10%;
+    }
+}
+
+.textAnimate5LetterOut {
+    -webkit-animation-name: textAnimate5LetterOut;
+    animation-name: textAnimate5LetterOut;
+    -webkit-animation-duration: .6s;
+    animation-duration: .6s;
+}
+
 
 @-webkit-keyframes textAnimate5__amount {
-    from{
-
-        -webkit-transform: translateY(0)  }
+    from {
+        -webkit-transform: translateY(0) ;
+    }
     10%,90%{
-        -webkit-transform: translateY(15px);
-        opacity: 1;}
+        -webkit-transform: translateY(25%);
+        padding-top: 0%;
+    }
     to {
-        opacity: 0;
-        -webkit-transform: translateY(-20px)  }
+        -webkit-transform: translateY(25%);
+        padding-top: 20.8%;
+    }
 }
 
 @keyframes textAnimate5__amount {
@@ -45,12 +66,12 @@
         transform: translateY(0) ;
     }
     10%,90%{
-        opacity: 1;
-        transform: translateY(15px)
+        transform: translateY(25%);
+        padding-top: 0%;
     }
     to {
-        opacity: 0;
-        transform: translateY(-20px) ;
+        transform: translateY(25%);
+        padding-top: 20.8%;
     }
 }
 .textAnimate5__amount {

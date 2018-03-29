@@ -1,20 +1,24 @@
 @-webkit-keyframes textAnimate6__calendar {
-     from{
-
-         -webkit-transform: translateY(100px) scale(0);  }
-     10%,90%{
-         -webkit-transform: translateY(60%) scale(1);}
-     to {
-         -webkit-transform: translateY(-800px) scale(1);  }
+    from {
+        -webkit-transform: translateY(100px) scale(0);
+    }
+    10%,71.4%{
+        -webkit-transform: translateY(60%) scale(1);}
+    82%{
+        -webkit-transform: translateY(70%) scale(1);}
+    90.28%, to {
+        -webkit-transform: translateY(-800px) scale(1); }
  }
 
 @keyframes textAnimate6__calendar {
     from {
         transform: translateY(100px) scale(0);
     }
-    10%,90%{
+    10%,71.4%{
         transform: translateY(60%) scale(1);}
-    to {
+    82%{
+        transform: translateY(70%) scale(1);}
+    90.28%, to {
         transform: translateY(-800px) scale(1); }
 }
 .textAnimate6__calendar {
@@ -25,23 +29,31 @@
 }
 
 @-webkit-keyframes textAnimate6__amount {
-    from{
-
-        -webkit-transform: translateY(0)  }
-    10%,90%{
-        -webkit-transform: translateY(40%) }
-    to {
-        -webkit-transform: translateY(-800px)  }
+    from {
+        -webkit-transform: translateY(0) ;
+    }
+    10%,73.3%{
+        -webkit-transform: translateY(40%)
+    }
+    78.26%{
+        -webkit-transform: translateY(67.8%)
+    }
+    82.13%, to {
+        -webkit-transform: translateY(-800px) ;
+    }
 }
 
 @keyframes textAnimate6__amount {
     from {
         transform: translateY(0) ;
     }
-    10%,80%{
+    10%,73.3%{
         transform: translateY(40%)
     }
-    to {
+    78.26%{
+        transform: translateY(67.8%)
+    }
+    82.13%, to {
         transform: translateY(-800px) ;
     }
 }
@@ -55,18 +67,25 @@
 
 
 @-webkit-keyframes textAnimate6Letter {
-    from,90%{
-
-        -webkit-transform: translateY(0)  }
-    to {
-        -webkit-transform: translateY(-800px)  }
+    from ,87.5%{
+        -webkit-transform: translateY(0) ;
+    }
+    92.125%{
+        -webkit-transform: translateY(67.5%)
+    }
+    95.75%, to {
+        -webkit-transform: translateY(-800px) ;
+    }
 }
 
 @keyframes textAnimate6Letter {
-    from ,90%{
+    from ,87.5%{
         transform: translateY(0) ;
     }
-    to {
+    92.125%{
+        transform: translateY(67.5%)
+    }
+    95.75%, to {
         transform: translateY(-800px) ;
     }
 }

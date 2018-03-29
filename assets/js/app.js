@@ -4,7 +4,7 @@ window.HELP_IMPROVE_VIDEOJS = false;
 function VideoPlayer () {
   var videoElem = document.createElement ('VIDEO');
   videoElem.setAttribute ('src', './assets/video/HDFC-original-Edited.mp4');
-  videoElem.setAttribute ('class', 'video-js');
+  videoElem.setAttribute ('class', 'video-js vjs-fluid');
   videoElem.setAttribute ('controls', true);
   videoElem.setAttribute ('id', 'js--video-player');
   this.video = videoElem;
@@ -70,17 +70,17 @@ VideoPlayer.prototype.init = function () {
   
   $ ('.charlie').on (self.animationStart, function (el) {
     if (this.id === 'amount') {
-      self.numberAnimation(self.data.total_charges, 0, 100, this);
+      self.numberAnimation(self.data.total_charges, 0, 50, this);
     } else if (this.id === 'textAnimate4amount') {
-      self.numberAnimation(self.data.recent_pmt_amt, 0, 100, this);
+      self.numberAnimation(self.data.recent_pmt_amt, 0, 50, this);
     } else if (this.id === 'textAnimate5amount') {
-      self.numberAnimation(self.data.overall_balance, 0, 100, this);
+      self.numberAnimation(self.data.overall_balance, 0, 50, this);
     } else if (this.id === 'textAnimate6amount') {
-      self.numberAnimation(self.data.min_payment, 0, 100, this);
+      self.numberAnimation(self.data.min_payment, 0, 50, this);
     } else if (this.id === 'textAnimate7__amount1') {
-      self.numberAnimation(self.data.points_earned_month, 0, 100, this);
+      self.numberAnimation(self.data.points_earned_month, 0, 50, this);
     } else if (this.id === 'textAnimate7__amount2') {
-      self.numberAnimation(self.data.total_points_earned, 0, 100, this);
+      self.numberAnimation(self.data.total_points_earned, 0, 50, this);
     }
   });
   videoPlayerWrapper.append (video);
@@ -130,7 +130,7 @@ VideoPlayer.prototype.divideWordIntoLetters = function  (month) {
       '<span class="charlie" data-animations="textAnimateLetter" data-times="3.' +
         index +
         '">' +
-        this +
+        (this == ' ' ? '&nbsp;' : this) +
         '</span>'
     );
   });
