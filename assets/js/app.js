@@ -7,8 +7,8 @@ function VideoPlayer() {
   // videoElem.setAttribute ('class', 'video-js vjs-fluid');
   videoElem.setAttribute('style', 'width: 100%;');
   videoElem.setAttribute('controls', true);
-  videoElem.setAttribute('autoplay', true);
-  videoElem.setAttribute('preload', true);
+  videoElem.setAttribute('autoplay', false);
+  videoElem.setAttribute('preload', 'auto');
   videoElem.setAttribute('id', 'js--video-player');
   videoElem.setAttribute('tabindex', -1)
   this.video = videoElem;
@@ -93,7 +93,7 @@ VideoPlayer.prototype.init = function() {
       self.numberAnimation(self.data.total_points_earned, 0, 50, this);
     }
   });
-  videoPlayerWrapper.append(video);
+  document.getElementById('videoPlayerWrapper').append(video);
 };
 var vPlayer = new VideoPlayer(),
   video = vPlayer.video,

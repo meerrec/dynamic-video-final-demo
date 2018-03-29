@@ -61,7 +61,9 @@ h1 {
     margin: 0.67em 0;
 }
 
-
+video {
+    z-index: 1;
+}
 
 .b-video-player-wrapper {
     position: relative;
@@ -87,7 +89,7 @@ h1 {
     -ms-flex-pack: center;
     justify-content: center;
     color: white;
-    z-index: 0;
+    z-index: 2147483647;
     transform: skewX(5deg);
     transform-origin: 50%;
 }
