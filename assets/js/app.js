@@ -87,7 +87,7 @@ VideoPlayer.prototype.init = function () {
   self.myPlayer = videojs ('js--video-player', {
     controls: true,
     autoplay: false,
-    preload: true,
+    preload: false,
   });
 };
 var vPlayer = new VideoPlayer (),
