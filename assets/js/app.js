@@ -6,11 +6,9 @@ function VideoPlayer() {
   videoElem.setAttribute('src', './assets/video/HDFC-original-Edited.mp4');
   // videoElem.setAttribute ('class', 'video-js vjs-fluid');
   videoElem.setAttribute('style', 'width: 100%;');
-  videoElem.setAttribute('controls', true);
-  videoElem.setAttribute('autoplay', false);
-  videoElem.setAttribute('preload', 'auto');
+  videoElem.setAttribute('controls', 'controls');
+  videoElem.setAttribute('autoplay', true);
   videoElem.setAttribute('id', 'js--video-player');
-  videoElem.setAttribute('tabindex', -1)
   this.video = videoElem;
 }
 
@@ -150,9 +148,16 @@ $(document).ready(function() {
   video.addEventListener('loadedmetadata', function() {
     vPlayer.init();
 
-    var videoParent = video.parentElement;
-    videoParent.insertBefore(video, textAnimationBlock );
+    var videoParent = document.getElementById('videoPlayerWrapper');
+    videoParent.insertBefore(video, textAnimationBlock);
   });
   // divideWordIntoLetters ();
+  var overlay= document.getElementById('textAnimationBlock');
+
+  video.addEventListener('progress', function() {
+    var show= video.currentTime>=5 && video.currentTime<10;
+    overlay.style.visibility= show? 'visible' : 'visible';
+  }, false);
+  video.play();
   textAnimationBlock.classList.add('is-ready');
 });
